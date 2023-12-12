@@ -1,58 +1,55 @@
 // Custom.scss
+@charset "UTF-8";
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+$navbar-padding-y: 3rem;
+
+$navbar-link-font-size: 5rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
-$primary: #A04ADD;
-$secondary: #3B53C7;
-$success: #A4D882;
-$info: #59C1EF;
-$warning: #FFF689;
-$danger: #E5446D;
-$light: #f2f2f2;
-$dark: #181853;
+.jumbotron {
+    background-image: url(img/lipton-can.png);
+    background-size: cover;
+  }
 
-
-body {
-    background-color: $light;
-}
-
-// Adjust nav link hover color here
-$navbar-dark-hover-color: $primary;
-
-// Typography
-// Change font family for base text
-
-$font-family-base: 'Source Sans 3', sans-serif;
-
-body {
-    font-family: $font-family-base;
-}
-
-
-// Change font family for headings
-
-$heading-font-family: 'Libre Baskerville', serif;
-
-// Change font sizes for h1-h6 using values in assignment
-
-$h1-font-size: 3.052rem;
-$h2-font-size: 2.441rem;
-$h3-font-size: 1.953rem;
-$h4-font-size: 1.563rem;
-$h5-font-size: 1.25rem;
-$h6-font-size:  1rem;
-
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// Add additional custom code here
-
-// Target .navbar-brand and change font-family to use 'Libre Baskerville'.
-.navbar-brand {
-    font-family: 'Libre Baskerville';
+  .card {
+    font-size: 1.5rem;
+    min-width: 200px;
+    margin-bottom: 2em;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+    text-decoration: none;
+ }
+ 
+ .card img {
+    height: 320px;
+    object-fit: contain;
+ }
+ 
+ .footer-image {
+    width: auto;
+    height: 100px;
+ }
+ 
+  .px-5 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+    padding:0 2em !important;
+ }
+ 
+ .card-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+ }
+ .card-text {
+    text-align: center;
+    margin-bottom: 1em;
  }
